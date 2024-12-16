@@ -1,6 +1,7 @@
 import React from 'react';
 import { Flower2, Cherry } from 'lucide-react';
 import { UserProfileButton } from './user/UserProfileButton';
+import { UserGreeting } from './user/UserGreeting';
 
 export function Header() {
   return (
@@ -13,8 +14,9 @@ export function Header() {
         <Cherry className="w-8 h-8 text-pink-400 animate-bounce" />
       </div>
       
-      {/* User profile button */}
-      <div className="absolute top-4 right-20">
+      {/* User profile and greeting */}
+      <div className="absolute top-4 right-20 flex items-center gap-4">
+        <UserGreeting />
         <UserProfileButton />
       </div>
       
